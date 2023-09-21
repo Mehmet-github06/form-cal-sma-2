@@ -48,9 +48,13 @@ label {
 fieldset{
     width: fit-content;
     background-image: url("https://picsum.photos/id/684/600/400");
+    border-radius: 5px;
 
 }
 legend{
     background-color: rgb(240, 149, 217);
     opacity: 0.8;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
