@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .container {
+    background-color: orange;
+    margin: 30px;
+    border: 1px solid black;
+    
+    }
+    .box1{
+    background-color: magenta;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 50px;
+    }
+    .box2{
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    }
+
+    .box3{
+        background-color: rgb(35, 35, 48, 0.6);
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        margin-top: -80px;
+        position: absolute;
+        z-index: 2;
+    }

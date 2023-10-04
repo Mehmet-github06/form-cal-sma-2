@@ -4,110 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
     <!-- kimlik lartı -->
-    
 
     <form>
+      <fieldset>
+        <legend>Kimlik Kartı</legend>
+        <table>
+          <!-- ad soyad -->
 
-        <fieldset>
-            <legend>
-                Kimlik Kartı
-            </legend>
-            <table>
-                <!-- ad soyad -->
-                
-                <tr>
-                  <td>
-                    <label for="ad-soyad">Adı Soyadı:</label>
-                  </td>
-                  <td class="input"><input type="text" id="ad-soyad" name="adSoyad" required />*</td>
-                </tr>
-        
-                <!-- kullanıcı adı -->
-        
-                <tr>
-                  <td>
-                    <label for="user-name">Kullanıcı Adı:</label>
-                  </td>
-                  <td class="input">
-                    <input type="text" id="user-name" name="userName" required />*
-                  </td>
-                </tr>
-        
-                <!-- email -->
-        
-                <tr>
-                  <td>
-                    <label for="email">E-Mail:</label>
-                  </td>
-                  <td class="input"><input type="email" name="email" id="email" required />*</td>
-                </tr>
-        
-                <!-- email gizle -->
-        
-                <tr>
-                  <td>
-                    <label for="email-gizle">E-Maili Gizle:</label>
-                  </td>
-                  <td class="input">
-                    <input type="checkbox" name="emailGizle" id="email-gizle" />
-                  </td>
-                </tr>
-        
-                <!-- şifre -->
-                <tr>
-                  <td>
-                    <label for="password">Şifre:</label>
-                  </td>
-                  <td  class="input">
-                    <input type="password" name="password" id="password" required />*
-                  </td>
-                </tr>
-        
-                <!-- tekrar şifre -->
-                <tr>
-                  <td>
-                    <label for="t-password">Tekrar Şifre:</label>
-                  </td>
-                  <td class="input"><input type="password" name="tPassword" id="t-password" />*</td>
-                </tr>
-        
-                <!-- cinsiyeti -->
-        
-                <tr>
-                  <td>
-                    <label for="gender">Cinsiyeti:</label>
-                  </td>
-                  <td class="input">
-                    <input type="radio" name="gender" id="erkek" />Erkek
-                    
-        
-                    <input type="radio" name="gender" id="kadın" />Kadın
-                  </td>
-                </tr>
-        
-                <!-- doğum tarihi -->
-        
-                <tr>
-                  <td>
-                    <label for="date">Doğum Tarihi:</label>
-                  </td>
-                  <td class="input"><input type="date" name="date" id="date" required />*</td>
-                </tr>
-        
-                <!-- button -->
-        
-                <tr>
-                  <td></td>
-                  <td class="input"><input type="submit" value="Kaydet" id="button"/></td>
-                </tr>
-              </table>
-        </fieldset>
+          <tr>
+            <td>
+              <label for="ad-soyad">Adı Soyadı:</label>
+            </td>
+            <td class="input">
+              <input type="text" id="ad-soyad" name="adSoyad" required />*
+            </td>
+          </tr>
 
-      
+          <!-- kullanıcı adı -->
+
+          <tr>
+            <td>
+              <label for="user-name">Kullanıcı Adı:</label>
+            </td>
+            <td class="input">
+              <input type="text" id="user-name" name="userName" required />*
+            </td>
+          </tr>
+
+          <!-- email -->
+
+          <tr>
+            <td>
+              <label for="email">E-Mail:</label>
+            </td>
+            <td class="input">
+              <input type="email" name="email" id="email" required />*
+            </td>
+          </tr>
+
+          <!-- email gizle -->
+
+          <tr>
+            <td>
+              <label for="email-gizle">E-Maili Gizle:</label>
+            </td>
+            <td class="input">
+              <input type="checkbox" name="emailGizle" id="email-gizle" />
+            </td>
+          </tr>
+
+          <!-- şifre -->
+          <tr>
+            <td>
+              <label for="password">Şifre:</label>
+            </td>
+            <td class="input">
+              <input type="password" name="password" id="password" required />*
+            </td>
+          </tr>
+
+          <!-- tekrar şifre -->
+          <tr>
+            <td>
+              <label for="t-password">Tekrar Şifre:</label>
+            </td>
+            <td class="input">
+              <input type="password" name="tPassword" id="t-password" />*
+            </td>
+          </tr>
+
+          <!-- cinsiyeti -->
+
+          <tr>
+            <td>
+              <label for="gender">Cinsiyeti:</label>
+            </td>
+            <td class="input">
+              <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="erkek"
+              />Erkek
+
+              <input
+                type="radio"
+                name="gender"
+                id="gender"
+                value="kadın"
+              />Kadın
+            </td>
+          </tr>
+
+          <!-- doğum tarihi -->
+
+          <tr>
+            <td>
+              <label for="date">Doğum Tarihi:</label>
+            </td>
+            <td class="input">
+              <input type="date" name="date" id="date" required />*
+            </td>
+          </tr>
+
+          <!-- button -->
+
+          <tr>
+            <td></td>
+            <td class="input">
+              <input type="submit" value="Kaydet" id="button" />
+              <button type="reset" value="reset" id="sil">Temizle</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
     </form>
   </body>
 </html>
